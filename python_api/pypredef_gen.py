@@ -784,7 +784,7 @@ def pymodule2predef(BASEPATH, module_name, module, title):
     attribute_set = set()
     filepath = os.path.join(BASEPATH, module_name + ".py")
 
-    file = open(filepath, "w")
+    file = open(filepath, "w", encoding = "utf-8")
     fw = file.write
     #fw = print
 
